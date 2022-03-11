@@ -1,4 +1,4 @@
-# React-Practical4
+# React-Practical3
   Created React dummy project named “Todo-react-app”.
 
 # Output:
@@ -7,12 +7,10 @@
 ![Screenshot from 2022-03-11 13-58-37](https://user-images.githubusercontent.com/97098100/157832122-97274835-219e-4c36-8532-38dfb21ba970.png)
 
 ### 2. Empty TodoItems
-![Screenshot from 2022-03-11 13-52-05](https://user-images.githubusercontent.com/97098100/157832295-f8f174ae-7779-4123-b63d-295935badb86.png)
+![Screenshot from 2022-03-11 18-09-39](https://user-images.githubusercontent.com/97098100/157868523-3b297f3f-943e-4677-b00e-555df526f3d2.png)
 
 ### 3. Error alert 
-![Screenshot from 2022-03-11 13-59-32](https://user-images.githubusercontent.com/97098100/157832501-310b9369-9aea-48c5-b511-52da95e8582b.png)
-![Screenshot from 2022-03-11 13-59-38](https://user-images.githubusercontent.com/97098100/157832602-e44ae42a-dd4b-41bf-8e7a-ebb2387c55c8.png)
-
+![Screenshot from 2022-03-11 18-08-19](https://user-images.githubusercontent.com/97098100/157868301-8ee7d076-5378-4946-90b4-501b77fe0d4f.png)
 
 
 # 1. [Setup React](https://reactjs.org/docs/try-react.html)
@@ -20,8 +18,8 @@
 # 2. Clone the repo
 
 ```sh
-$ https://github.com/bhumilodhari/Reactjs-Practical2
-$ cd Reactjs-Practical2/
+$ https://github.com/bhumilodhari/Reactjs-Practical3
+$ cd Reactjs-Practical3/
 ```
 # 3. Install dependency
 ```sh
