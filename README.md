@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# React-Practical4
+  Created React dummy project named “Todo-react-app”.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Output:
 
-## Available Scripts
+### 1.Todo App
+![Screenshot from 2022-03-11 13-58-37](https://user-images.githubusercontent.com/97098100/157832122-97274835-219e-4c36-8532-38dfb21ba970.png)
 
-In the project directory, you can run:
+### 2. Empty TodoItems
+![Screenshot from 2022-03-11 13-52-05](https://user-images.githubusercontent.com/97098100/157832295-f8f174ae-7779-4123-b63d-295935badb86.png)
 
-### `npm start`
+### 3. Error alert 
+![Screenshot from 2022-03-11 13-59-32](https://user-images.githubusercontent.com/97098100/157832501-310b9369-9aea-48c5-b511-52da95e8582b.png)
+![Screenshot from 2022-03-11 13-59-38](https://user-images.githubusercontent.com/97098100/157832602-e44ae42a-dd4b-41bf-8e7a-ebb2387c55c8.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# 1. [Setup React](https://reactjs.org/docs/try-react.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 2. Clone the repo
 
-### `npm run build`
+```sh
+$ https://github.com/bhumilodhari/Reactjs-Practical2
+$ cd Reactjs-Practical2/
+```
+# 3. Install dependency
+```sh
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 4. Run the app
+```sh
+$ npm start
+```
+Runs the app in the development mode.
+#### Open http://localhost:8080 to view it in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 5. Production build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+$ npm run build
+```
+# Features
 
-### `npm run eject`
+1. When a user clicks on the + button,its show text input at the end of the list which is editable, and hide the +button.
+2. Once text input is visible, The user types and presses enter key, a new item added to the end of the list.
+3. If the user types nothing and presses enter key,Its give an error alert.
+4. If the user presses the Esc key, its hide the text input and show back the + button again.
+5. The list is scrollable and the date and time should be sticky at the top of the list.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Install dependency for style components
+```sh
+$ npm install --save styled-components
+```
