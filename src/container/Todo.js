@@ -1,10 +1,10 @@
-import TodoDate from '../TodoDate/TodoDate';
-import TodoContent from '../TodoContent/TodoContent';
-import TodoAddButton from '../TodoAddButton/TodoAddButton';
-import TodoStyle from '../../styled/todo';
+import TodoDate from '../components/TodoDate/TodoDate';
+import TodoContent from '../components/TodoContent/TodoContent';
+import TodoAddButton from '../components/Button/Button';
+import TodoStyle from '../styled/todo';
 import { useState, useEffect } from 'react';
-import { getStorage, addStorage, resetStorage } from '../../services/localStorage';
-import { getDay } from '../../Util/util';
+import { getStorage, addStorage, resetStorage } from '../services/localStorage';
+import { getDay } from "../utils/util";
 
 function Todo() {
   const [list, setList] = useState([]);
@@ -22,16 +22,6 @@ function Todo() {
     } else {
       resetStorage();
     }
-
-    const interval = setInterval(() => {
-      console.log(getDay());
-      if (getDay().toString() !== getStorage().date.toString()) {
-        window.location.reload();
-      }
-    }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
   }, []);
 
   return (

@@ -12,7 +12,7 @@ function TodoContent(props) {
                     id={dummy.id} 
                     data={dummy.data} 
                     isChecked={dummy.isChecked}/>
-            )) : <Empty> Its empty!</Empty>}
+            )) : <Empty> No Task </Empty>}
         </TodoContainer>
     )
 }

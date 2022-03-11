@@ -1,5 +1,4 @@
-import { getDay } from "../Util/util";
-
+import { getDay } from "../utils/util";
 const getStorage = () => {
     return JSON.parse(localStorage.getItem("TodoItems"));
 };

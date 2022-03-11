@@ -1,10 +1,9 @@
 import React from "react";
-import Todo from "./Components/Todo/Todo";
+import Todo from "./container/Todo";
 
 
 function App() {
   return (
-  
       <Todo />
     );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InputStyle from '../../styled/InputStyle';
 import TodoAddButtonStyle from '../../styled/todoAddButton';
+import Error from '../../styled/Error';
 
 function TodoAddButton(props) {
 
@@ -23,7 +24,6 @@ function TodoAddButton(props) {
            if(id.length === 0)
            {
                setError(true);
-               alert('Its empty! please enter your todo items')
                return;
            }
            props.onAdd({
@@ -43,14 +43,17 @@ function TodoAddButton(props) {
     return (
         <>
             {showInput && (
-                <InputStyle
+                <InputStyle 
                     error={error}
                     onChange={changeHandler}
                     onKeyUp={enterHandler}
                     value={id}
+                    placeholder='Enter your Todo items'
                 />)}
+                {error && <Error> Enter some task </Error>}
             {!showInput && (
                 <TodoAddButtonStyle onClick={addButtonHandler}>+</TodoAddButtonStyle>)}
+        
         </>
     )
 }

@@ -6,21 +6,21 @@ import MonthYearStyle from '../../styled/TodoDate/monthYearStyle';
 import Month from '../../styled/TodoDate/month';
 import Year from '../../styled/TodoDate/year';
 import Day from '../../styled/TodoDate/day';
-import { day , month , year, date } from '../../Util/util';
+import { getDay } from '../../utils/util';
 
 class TodoDate extends Component {
     render() {
     return (
         <TodoDateStyle>
             <InnerTodoDateStyle>
-                <DateStyle>{date}
+                <DateStyle>{getDay('date')}
                     <MonthYearStyle>
-                        <Month>{month}</Month>
-                        <Year>{year}</Year>
+                        <Month>{getDay('month')}</Month>
+                        <Year>{getDay('year')}</Year>
                     </MonthYearStyle>
                 </DateStyle>
             </InnerTodoDateStyle>
-            <Day>{day}</Day>
+            <Day>{getDay('day')}</Day>
         </TodoDateStyle>
     )}
 }
